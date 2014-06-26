@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="comet.com"
+      android:versionCode="7"
+      android:versionName="1.5">
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+<uses-permission android:name="android.permission.INTERNET" />
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:persistent="false" android:hasCode="true">
+		<activity android:name=".Welcome" android:label="@string/app_name"
+		android:configChanges="keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".MainInterface" 
+		android:configChanges="keyboardHidden|orientation"></activity>
+		<activity android:name=".HOME" 
+		android:configChanges="keyboardHidden|orientation"></activity>
+		<activity android:name=".Month" 
+		android:configChanges="keyboardHidden|orientation"></activity>
+		<activity android:name=".calendar" 
+		android:configChanges="keyboardHidden|orientation"></activity>
+		<activity android:name=".Browsetab" 
+		android:configChanges="keyboardHidden|orientation"></activity>
+		<activity android:name=".TalkDetail"
+		android:configChanges="keyboardHidden|orientation"></activity>
+		<activity android:name=".TalkTags"
+		android:configChanges="keyboardHidden|orientation"></activity>
+		<activity android:name=".TalkComments"
+		android:configChanges="keyboardHidden|orientation"></activity>
+		<activity android:name=".Talktab" 
+		android:configChanges="keyboardHidden|orientation"></activity>
+		<activity android:name=".MyBookmarked" 
+		android:configChanges="keyboardHidden|orientation"></activity>
+		<activity android:name=".MyRecommend" 
+		android:configChanges="keyboardHidden|orientation"></activity>
+		<activity android:name=".series" 
+		android:configChanges="keyboardHidden|orientation"></activity>
+		<activity android:name=".SeriesDetail" 
+		android:configChanges="keyboardHidden|orientation"></activity>
+		<activity android:name=".groups" 
+		android:configChanges="keyboardHidden|orientation"></activity>
+		<activity android:name=".GroupDetail" 
+		android:configChanges="keyboardHidden|orientation"></activity>
+		<activity android:name=".Signin" 
+		android:configChanges="keyboardHidden|orientation"></activity>
+		<activity android:name=".Search" 
+		android:configChanges="keyboardHidden|orientation"></activity>
+		<activity android:name=".gameTab"></activity>
+		<activity android:name=".gamehome"></activity>
+		<activity android:name=".mygamerec"></activity>
+		<activity android:name=".game"></activity>
+		<activity android:name=".guess"></activity>
+		<activity android:name=".guess2"></activity>
+		<activity android:name=".guess3"></activity>
+		<activity android:name=".guess4"></activity>
+		<activity android:name=".message"></activity>
+		<activity android:name=".Game1RecFriend"></activity>
+    </application>
+    <uses-sdk android:minSdkVersion="4" />
+</manifest>

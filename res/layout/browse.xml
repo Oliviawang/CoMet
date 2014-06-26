@@ -1,0 +1,47 @@
+<RelativeLayout 
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+<Button android:id="@+id/timeheader"
+	android:layout_centerHorizontal="true"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="@drawable/time_bar_gray"
+	android:layout_marginTop="5dip"
+	android:layout_marginBottom="5dip"
+	android:textColor="@drawable/Black"></Button>
+<ImageButton android:id="@+id/move_back"
+	android:layout_toLeftOf="@id/timeheader"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="5dip"
+	android:layout_marginBottom="5dip"
+	android:src="@drawable/calendar_left_arrow_selector"
+	android:background="#00000000"></ImageButton>
+<ImageButton android:id="@+id/move_next"
+	android:layout_toRightOf="@id/timeheader"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="5dip"
+	android:layout_marginBottom="5dip"
+	android:src="@drawable/calendar_right_arrow_selector"
+	android:background="#00000000"></ImageButton>
+<TextView android:id="@+id/status"
+	android:layout_below="@id/timeheader"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_centerHorizontal="true"
+	android:background="@drawable/status_bar"
+	android:visibility="gone"></TextView>
+<ListView android:id="@+id/ListView"
+	android:layout_below="@id/timeheader"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"></ListView>
+<ProgressBar android:id="@+id/widget108"
+      android:layout_width="wrap_content" 
+      android:layout_height="wrap_content"
+	android:layout_centerInParent="true"
+	android:background="#50808080"
+	android:visibility="gone">
+</ProgressBar>
+</RelativeLayout>

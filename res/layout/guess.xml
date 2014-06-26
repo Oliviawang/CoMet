@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+       <include android:id="@+id/FrameLayout01" layout="@layout/frame_header"></include>
+       
+
+        <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_below="@id/FrameLayout01">
+
+
+
+          <Spinner
+            android:id="@+id/gameSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            />
+
+       </LinearLayout>
+       <LinearLayout
+    android:id="@+id/LinearLayout03"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/linearLayout1"
+    android:background="@drawable/action_bar"
+    android:orientation="horizontal" >
+
+    <RatingBar
+        android:id="@+id/ratingbar1"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dip"
+        android:numStars="5" />
+</LinearLayout>
+     <LinearLayout 
+         android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_below="@id/linearLayout1"
+         >
+
+        <ListView
+            android:id="@+id/guesslist_sys"
+            android:layout_width="200dp"
+            android:layout_height="412dp"
+            android:visibility="visible" >
+
+        </ListView>
+              <ListView
+            android:id="@+id/guesslist_fri"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" 
+            android:visibility="gone"
+            >
+            </ListView>
+
+              <ListView
+                  android:id="@+id/FriendList"
+                  android:layout_width="125dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:entries="@array/friendImg"
+                  android:entryValues="@array/name" >
+              </ListView>
+
+               <SlidingDrawer
+    android:id="@+id/slidingDrawer1"
+    android:layout_width="125dp"
+    android:layout_height="match_parent"
+   
+    android:content="@+id/content"
+    android:handle="@+id/handle"
+    android:orientation="horizontal"
+  >
+
+    <Button
+        android:id="@+id/handle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Friend" 
+        android:background="@drawable/handle"
+        />
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="123dp"
+        android:layout_height="395dp"
+        android:background="@drawable/back" >
+        
+    </LinearLayout>
+</SlidingDrawer>
+      </LinearLayout>
+</LinearLayout>

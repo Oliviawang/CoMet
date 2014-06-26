@@ -1,0 +1,26 @@
+<RelativeLayout android:id="@+id/RelativeLayout01"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/back">
+<include android:id="@+id/FrameLayout01" layout="@layout/frame_header"></include>
+<!--
+<Button android:id="@+id/more"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/FrameLayout01"
+		android:layout_alignParentRight="true"></Button>-->
+<TextView android:id="@+id/title"
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content"
+		android:textStyle="bold"
+		android:textColor="@drawable/darkblue"
+		android:padding="5pt"
+		android:layout_below="@id/FrameLayout01">
+</TextView>
+<ListView android:id="@+id/ListView01"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_below="@id/title">
+</ListView>
+</RelativeLayout>

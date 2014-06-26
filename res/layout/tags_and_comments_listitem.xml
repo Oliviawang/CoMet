@@ -1,0 +1,22 @@
+<RelativeLayout android:id="@+id/LinearLayout01"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	 android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/comment_m">
+	<TextView android:id="@+id/user"
+		android:layout_alignParentLeft="true"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@drawable/Black"></TextView>
+	<TextView android:id="@+id/date"
+		android:layout_alignParentRight="true"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@drawable/Black"></TextView>
+	<TextView android:id="@+id/comment"
+		android:layout_below="@id/user"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textColor="@drawable/Black">
+	</TextView>
+</RelativeLayout>

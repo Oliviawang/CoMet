@@ -1,0 +1,110 @@
+<ScrollView android:id="@+id/ScrollView01"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout android:id="@+id/LinearLayout01"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:paddingBottom="35dip">
+<RelativeLayout android:id="@+id/LinearLayout04"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="10dip"
+	android:layout_marginLeft="5dip"
+	android:layout_marginRight="5dip"
+	android:background="@drawable/time_bar_gray">
+<LinearLayout android:id="@+id/LinearLayout05"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+<ImageView android:id="@+id/photo"
+	android:src="@drawable/default_user"
+	android:layout_width="60dip"
+	android:layout_height="60dip"
+	android:layout_marginRight="5pt"
+	android:layout_marginLeft="5pt"
+	android:layout_marginBottom="5pt"
+	android:layout_alignParentLeft="true"/>
+<TextView android:id="@+id/title"
+		android:layout_height="wrap_content" 
+		android:layout_width="fill_parent"
+		android:textStyle="bold"
+		android:textColor="@drawable/darkblue"
+		android:layout_gravity="center_vertical">
+</TextView>
+</LinearLayout>
+	<TextView android:id="@+id/time" 
+		android:layout_height="wrap_content" 
+		android:layout_width="fill_parent"
+		android:textColor="@drawable/Gray"
+		android:layout_below="@id/LinearLayout05">
+	</TextView>
+	<TextView android:id="@+id/location" 
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content"
+		android:textColor="@drawable/SteelBlue"
+		android:layout_below="@id/time">
+	</TextView>
+	<TextView android:id="@+id/speaker" 
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content"
+		android:textColor="@drawable/SteelBlue"
+		android:layout_below="@id/location">
+	</TextView>
+	<TextView android:id="@+id/pub" 
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content"
+		android:textColor="@drawable/SteelBlue"
+		android:layout_below="@id/speaker"
+		android:layout_marginBottom="10dip">
+	</TextView>
+</RelativeLayout>
+<LinearLayout android:id="@+id/LinearLayout03"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:orientation="horizontal"
+		android:layout_below="@id/LinearLayout04"
+		android:layout_marginTop="-3dip"
+		android:background="@drawable/action_bar">
+	<ImageButton android:id="@+id/bookmark"
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content"
+		android:src="@drawable/no_schedule"
+		android:background="#00000000">
+    </ImageButton>
+    <ImageButton android:id="@+id/email"
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content"
+		android:src="@drawable/email_to_friend"
+        android:layout_marginLeft="5pt"
+        android:background="#00000000"
+        >
+    </ImageButton>
+    <ImageButton android:id="@+id/share"
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content"
+		android:src="@drawable/share"
+        android:layout_marginLeft="5pt"
+        android:background="#00000000">
+    </ImageButton>
+    <RatingBar android:id="@+id/ratingbar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_marginLeft="10dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:numStars="5"/>
+	</LinearLayout> 
+	<WebView android:id="@+id/des" 
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent" 
+		android:background="@drawable/time_bar_gray"
+		android:layout_marginTop="35dip"
+		android:layout_marginLeft="5dip"
+		android:layout_marginRight="5dip"
+		android:layout_below="@id/LinearLayout04">
+	</WebView>
+</RelativeLayout>
+</ScrollView> 

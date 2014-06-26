@@ -1,0 +1,17 @@
+<RelativeLayout android:id="@+id/RelativeLayout01"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/back" >
+<include android:id="@+id/FrameLayout01" layout="@layout/frame_header"></include>	
+<GridView android:id="@+id/GridView01" 
+		android:layout_width="wrap_content"
+		android:columnWidth="70dp" 
+		android:horizontalSpacing="20dp"
+		android:numColumns="2" 
+		android:layout_marginTop="40dip"
+		android:layout_below="@id/FrameLayout01"
+		android:layout_centerInParent="true"
+		android:stretchMode="columnWidth"
+		android:layout_height="wrap_content">
+</GridView>
+</RelativeLayout>

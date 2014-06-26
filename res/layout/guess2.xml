@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back" >
+
+
+       <include android:id="@+id/FrameLayout01" layout="@layout/frame_header"></include>
+       
+
+        <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_below="@id/FrameLayout01"
+        android:background="@drawable/time_bar_gray">
+
+             <TextView
+                 android:id="@+id/guesstitle"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/darkblue"
+                 android:text="No Recommend"
+                 android:textColor="@drawable/White"
+                 android:textSize="15dip" />
+
+             <TextView
+                 android:id="@+id/guessspeaker"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/darkblue"
+                 android:text="None"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:textColor="@drawable/Gray" 
+                 android:textSize="13dip"/>
+
+  <TextView
+                 android:id="@+id/guessdetail"
+                 android:layout_width="match_parent"
+                 android:layout_height="70pt"
+                 android:text="None"
+                 android:background="@drawable/darkblue"
+android:textColor="@drawable/Gray" 
+android:textSize="11dip"/>
+             <LinearLayout android:id="@+id/LinearLayout03"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:orientation="horizontal"
+		android:layout_below="@id/LinearLayout04"
+		android:layout_marginTop="-3dip"
+		android:background="@drawable/action_bar">
+	<ImageButton android:id="@+id/bookmark"
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content"
+		android:src="@drawable/no_schedule"
+		android:background="#00000000">
+    </ImageButton>
+    <ImageButton android:id="@+id/email"
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content"
+		android:src="@drawable/email_to_friend"
+        android:layout_marginLeft="5pt"
+        android:background="#00000000"
+        >
+    </ImageButton>
+    <ImageButton android:id="@+id/share"
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content"
+		android:src="@drawable/share"
+        android:layout_marginLeft="5pt"
+        android:background="#00000000">
+    </ImageButton>
+    <RatingBar android:id="@+id/rbar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_marginLeft="10dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:numStars="5"/>
+
+    <ImageButton
+        android:id="@+id/rec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:layout_marginLeft="30pt"
+        android:background="#00000000"
+        android:gravity="right"
+        android:src="@drawable/rec" />
+
+	</LinearLayout> 
+
+       
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+ <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="System Recommendation"
+            android:textColor="@drawable/darkblue"  />
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Friend Recommendation" 
+                android:textColor="@drawable/darkblue"/>
+        </RadioGroup>
+            
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout1"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_marginRight="5pt"
+        android:background="#00000000"
+        android:gravity="right"
+        android:src="@drawable/next" />
+
+        </LinearLayout>
+           </LinearLayout>
+        
+
+</LinearLayout>

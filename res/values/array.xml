@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="friendImg">    
+        <item>The Press and Campaign 2012</item>    
+        <item>AMPLab: Making Sense at Scale with Algorithms, Machines and People</item>    
+        <item>The Beneficiary: Cosmopolitanism and Inequality</item>    
+    </string-array>    
+    <string-array name="name">    
+        <item>The Press and Campaign 2012 </item>    
+        <item>AMPLab: Making Sense at Scale with Algorithms, Machines and People </item>    
+        <item>The Beneficiary: Cosmopolitanism and Inequality</item>    
+    </string-array>    
+     <string-array name="status">    
+        <item></item>    
+        <item></item>    
+        <item></item>    
+    </string-array>    
+    
+</resources>

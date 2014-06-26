@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="headingstyle">
+    <item name="android:paddingLeft">4px</item>
+    <item name="android:paddingBottom">4px</item>
+    <item name="android:textColor">#f1f1f1</item>
+    <item name="android:textSize">20dip</item>
+    <item name="android:shadowColor">#4d4d4d</item>
+    <item name="android:shadowDx">0</item>
+    <item name="android:shadowDy">-3</item>
+    <item name="android:shadowRadius">3</item>
+</style>
+</resources>

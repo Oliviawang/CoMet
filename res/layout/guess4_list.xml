@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+  <RelativeLayout android:layout_width="300dip"
+	                  android:layout_height="50dip">
+
+<RatingBar
+    android:id="@+id/ratingBar1"
+    style="?android:attr/ratingBarStyleSmall"
+    android:layout_width="wrap_content"
+    android:layout_height="70dip"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:layout_gravity="center_vertical"
+    android:layout_marginLeft="5dip"
+    android:numStars="5"
+    android:rating="2.5" />
+
+	<TextView 
+		android:id="@+id/title"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:layout_alignParentLeft="true"
+		android:layout_toLeftOf="@+id/ratingBar1"
+		android:layout_centerVertical="true"
+		android:textSize="15dip"
+	  android:textColor="@drawable/DarkBlue"
+		android:singleLine="true"
+		android:ellipsize="marquee"
+		android:marqueeRepeatLimit="marquee_forever"
+		android:text="HCI Design"
+		/>
+
+
+
+	</RelativeLayout>
+</LinearLayout>

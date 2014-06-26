@@ -1,0 +1,23 @@
+<LinearLayout android:id="@+id/LinearLayout01"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	 android:layout_width="fill_parent"
+	android:layout_height="fill_parent" 
+	android:orientation="vertical">
+	<Button android:id="@+id/add"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:text="add comment"></Button>
+	<TextView android:id="@+id/status"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:background="@drawable/status_bar"
+		android:visibility="gone">
+	</TextView>
+	<ListView android:id="@+id/ListView01"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+	</ListView>
+	
+</LinearLayout>

@@ -1,0 +1,117 @@
+<FrameLayout android:id="@+id/FrameLayout01"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/status_bar"
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		>
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/RelativeLayout11">
+	<TextView android:id="@+id/TextView01"
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:text="CoMeT"
+		android:drawableRight="@drawable/star"
+		style="@style/headingstyle">
+	</TextView>
+	
+	<ImageButton android:id="@+id/ImageButton01"
+		android:background="@drawable/selector_search"
+		android:layout_width="20dip"
+		android:layout_height="20dip"
+		android:layout_alignParentRight="true"
+		android:layout_marginTop="5dip">
+	</ImageButton>
+	<ImageButton android:id="@+id/ImageButton03"
+		android:background="@drawable/selector_refresh"
+		android:layout_width="20dip"
+		android:layout_height="20dip"
+		android:layout_toLeftOf="@id/ImageButton01"
+		android:layout_marginRight="10dip"
+		android:layout_marginTop="5dip">
+	</ImageButton>
+	<ProgressBar android:id="@+id/widget108"
+      android:layout_width="16dip" 
+      android:layout_height="16dip"
+      android:layout_toLeftOf="@id/ImageButton03"
+      android:layout_marginRight="10dip"
+      android:layout_marginTop="5dip"
+      style="?android:attr/progressBarStyleSmall">
+	</ProgressBar>
+	<TextView android:id="@+id/navi"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="This Week Event"
+		android:textColor="@drawable/Black"
+		android:layout_below="@id/TextView01"
+		android:layout_centerHorizontal="true"
+		android:clickable="true">
+	</TextView>	
+	
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/RelativeLayout12"
+		android:layout_below="@+id/navi">
+		 <ImageButton android:id="@+id/mail"
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content"
+		android:src="@drawable/mail"
+        android:layout_marginLeft="1pt"
+        android:background="#00000000">
+    </ImageButton>
+	<TextView android:id="@+id/message"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Message"
+		android:textColor="@drawable/Red"
+		android:layout_below="@id/navi"
+	
+		android:clickable="true"
+		  android:layout_marginLeft="10pt">
+	</TextView>	
+	<TextView android:id="@+id/totalview"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Total Score:"
+	style="@style/headingstyle"
+		android:layout_below="@id/navi"
+	android:textSize="15dp"
+		android:clickable="false"
+		  android:layout_marginLeft="80pt">
+	</TextView>	
+	<TextView android:id="@+id/totalscore"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="0"
+	style="@style/headingstyle"
+		android:layout_below="@id/navi"
+	android:textSize="15dp"
+		android:clickable="true"
+		  android:layout_marginLeft="115pt">
+	</TextView>	
+	</RelativeLayout>
+	<RelativeLayout android:id="@+id/search"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/TextView01"
+		android:visibility="gone">
+	<Button android:id="@+id/searchbutton"
+		android:layout_width="40dip"
+		android:layout_height="40dip"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:text="GO"
+		android:textColor="@drawable/White"
+		android:background="@drawable/Green"
+		android:layout_marginLeft="10dip">
+	</Button>
+	<EditText android:id="@+id/searchbar"
+		android:layout_toLeftOf="@id/searchbutton"
+		android:layout_width="fill_parent"
+		android:layout_height="50dip"></EditText>
+	</RelativeLayout>
+	</RelativeLayout>
+</FrameLayout>
